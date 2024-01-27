@@ -181,10 +181,154 @@
     border: transparent;
 }
 
+
+/* caroucel code */
+
+
+.swiper {
+    width: 100%;
+    height: 441px;
+}
+
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+    background-color: #FFE2B5;
+    border-radius: 50px;
+}
+
+.caroucel_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.caroucel_text_content {
+    padding: 44px 0px 0px 73px;
+}
+
+.hero_title,
+.hero_title_bold {
+    max-width: 429px;
+    color: #000;
+    font-family: "Poppins400";
+    font-size: 52px;
+    font-weight: 400;
+    margin-bottom: 9px;
+}
+
+.hero_title_bold {
+    font-family: "Poppins700";
+    font-family: 700;
+}
+
+.hero_text {
+    margin-bottom: 27px;
+    color: #11293B;
+    font-family: "Poppins400";
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.hero_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    padding: 15px 22px 17px 25px;
+    background-color: #000000;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .5s;
+    color: #D0AD37;
+    font-family: "Segoe UI";
+    font-size: 20px;
+    font-weight: 400;
+    transition: .5s;
+    border: 1px solid transparent;
+}
+
+.hero_btn:hover {
+    background-color: #D0AD37;
+    color: black;
+    border-color: black;
+    transition: .5s;
+}
+
+.caroucel_img_content {
+    width: 545px;
+    height: 461px;
+    background-image: url("../images/hero_background_images.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.swiper-slide:nth-child(2) {
+    background-color: rgb(198, 150, 142);
+}
+
+.swiper-slide:last-child {
+    background-color: rgb(179, 100, 86);
+}
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width:1024px) {
     .header {
         padding: 20px 0px;
     }
+
+    .swiper {
+        height: 350px;
+    }
+
+    .caroucel_content {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        padding: 0px 40px;
+
+    }
+
+    .caroucel_text_content {
+        padding: 0px;
+    }
+
+    .hero_title,
+    .hero_title_bold {
+        font-size: 34px;
+    }
+
+    .hero_text {
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+
+    .hero_btn {
+        gap: 10px;
+        padding: 10px 15px;
+        border-radius: 40px;
+        font-size: 16px;
+    }
+
+
+    .caroucel_img_content {
+        background-image: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero_images {
+        width: 350px;
+    }
+
 }
 
 @media only screen and (max-width:850px) {
@@ -196,6 +340,48 @@
     .header_left_search {
         display: none;
     }
+}
+
+@media only screen and (max-width:768px) {
+    .caroucel_content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    .caroucel_img_content {
+        display: none;
+    }
+
+    .caroucel_text_content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 40px;
+    }
+
+    .swiper {
+        height: auto;
+    }
+
+    .swiper-slide {
+        border-radius: 20px;
+    }
+
+    .hero_title,
+    .hero_title_bold {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+    .hero_text {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
 }
 
 @media only screen and (max-width:550px) {
@@ -227,5 +413,37 @@
     .cart_shop_value {
         padding: 5px 10px;
         font-size: 12px;
+    }
+
+    .caroucel_text_content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 40px;
+    }
+
+
+    .swiper-slide {
+        border-radius: 10px;
+    }
+
+    .hero_title,
+    .hero_title_bold {
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+
+    .hero_text {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .hero_btn {
+        gap: 5px;
+        padding: 5px 10px 6px 10px;
+        border-radius: 20px;
+        font-size: 14px;
     }
 }
