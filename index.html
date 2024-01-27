@@ -12,17 +12,49 @@
 </head>
 
 <body>
-
     <div class="container">
         <header class="header">
             <div class="header_left_content">
                 <div class="header_left_menu">
-
+                    <i class="fa-solid fa-bars"></i>
+                    <span class="header_menu_name">Menu</span>
+                </div>
+                <form class="header_left_search">
+                    <button class="header_search_btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <input type="text" class="header_search_input" required placeholder="Search">
+                </form>
+            </div>
+            <div class="header_center_content">
+                <a href="#">
+                    <img class="header_logo" src="./assets/images/header_logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header_right_content">
+                <div class="header_right_icons_group">
+                    <i class="fa-regular fa-user"></i>
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="cart_shop_content">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <p class="cart_shop_value">0</p>
+                    </div>
+                </div>
+                <div class="header_right_select_group">
+                    <select class="header_language_select">
+                        <option>ENG</option>
+                        <option>RU</option>
+                        <option>UZB</option>
+                    </select>
+                    <select class="header_money_select">
+                        <option>USD</option>
+                        <option>RUB</option>
+                        <option>UZS</option>
+                    </select>
                 </div>
             </div>
         </header>
     </div>
-
     <script src="./assets/js/app.js"></script>
 </body>
 
